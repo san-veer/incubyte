@@ -3,17 +3,65 @@
 
 This document contains the results of testing the Chandrayaan 3 class.
 
-## Test Case n: 
+## Test Case 1: 
 
 Description: 
 
 **Input**:
-- Initial position: (, , )
-- Initial direction: 
+- Initial position: (0, 0, 0)
+- Initial direction: N
 - Command: ""
 
 **Expected Output**:
-- Final Position: (, , )
+- Final Position: (0, 0, 0)
+- Final direction: N
 
 **Actual Output**:
-- Final Position: (, , )
+- Final Position: (0, 0, 0)
+- Final direction: N
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+## Test Case 2: 
+
+Description: 
+
+**Input**:
+- Initial position: (0, 0, 0)
+- Initial direction: N
+- Command: "f"
+
+**Expected Output**:
+- Final Position: (0, 1, 0)
+- Final direction: N
+
+**Actual Output**:
+- Final Position: (0, 0, 0)
+- Final direction: N
+
+FAIL: test_case (__main__.TestSpacecraft.test_case)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\KIIT\Desktop\incubyte\test_case.py", line 16, in test_case
+    self.assertEqual(returned_position, expected_position)
+AssertionError: Lists differ: [0, 0, 0] != [0, 1, 0]
+
+First differing element 1:
+0
+1
+
+- [0, 0, 0]
+?     ^
+
++ [0, 1, 0]
+?     ^
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
+
