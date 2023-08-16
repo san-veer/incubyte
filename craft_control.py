@@ -35,22 +35,15 @@ def turn_right(direction, belly_direction):
       return "W"
    elif direction == "W":
       return "N"
-   elif direction == "U" and belly_direction == "N":
-      return "E", 
-   elif direction == "U" and belly_direction == "E":
-      return "S"
-   elif direction == "U" and belly_direction == "S":
-      return "W"
-   elif direction == "D" and belly_direction == "W":
-      return "N"
-   elif direction == "D" and belly_direction == "N":
-      return "E", 
-   elif direction == "D" and belly_direction == "E":
-      return "S"
-   elif direction == "D" and belly_direction == "S":
-      return "W"
-   elif direction == "D" and belly_direction == "W":
-      return "N"
+   elif direction == "U" or "D":
+      if belly_direction == "N":
+         return "E"
+      elif belly_direction == "E":
+         return "S"
+      elif belly_direction == "S":
+         return "W"
+      elif belly_direction == "W":
+         return "N"
    
 def turn_left(direction, belly_direction):
    if direction == "N":
