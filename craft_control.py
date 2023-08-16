@@ -12,8 +12,9 @@ def turn_right(direction):
    if direction == 'N':
       return 'E'
 
-def turn_up(position, direction):
-   return
+def turn_up(direction):
+   if direction == 'E':
+      return 'U'
 
 def turn_down(position, direction):
    return
@@ -24,5 +25,7 @@ def chandrayaan_3(position, direction, commands):
          move_forward(position, direction)
       if command == "r":
          direction = turn_right(direction)
+      if command == "u":
+         direction = turn_up(direction)
 
    return position, direction

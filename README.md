@@ -170,3 +170,25 @@ AssertionError: 'E' != 'U'
 Ran 1 test in 0.001s
 
 FAILED (failures=1)
+
+## Test Case 4 pass: 
+
+Description: 
+
+**Input**:
+- Initial position: (0, 0, 0)
+- Initial direction: N
+- Command: ['f', 'r'. 'u']
+
+**Expected Output**:
+- Final Position: (0, 1, 0)
+- Final direction: U
+
+**Actual Output**:
+- Final Position: (0, 1, 0)
+- Final direction: E
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
