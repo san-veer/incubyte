@@ -186,9 +186,50 @@ Description:
 
 **Actual Output**:
 - Final Position: (0, 1, 0)
-- Final direction: E
+- Final direction: U
 
 ----------------------------------------------------------------------
 Ran 1 test in 0.000s
 
 OK
+
+## Test Case 5: 
+
+Description: 
+
+**Input**:
+- Initial position: (0, 0, 0)
+- Initial direction: N
+- Command: ['f', 'r'. 'u']
+
+**Expected Output**:
+- Final Position: (0, 1, -1)
+- Final direction: U
+
+**Actual Output**:
+- Final Position: (0, 1, 0)
+- Final direction: U
+
+FAIL: test_case (__main__.TestSpacecraft.test_case)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\KIIT\Desktop\incubyte\test_case.py", line 16, in test_case
+    self.assertEqual(returned_position, expected_position)
+AssertionError: Lists differ: [0, 1, 0] != [0, 1, -1]
+
+First differing element 2:
+0
+-1
+
+- [0, 1, 0]
+?        ^
+
++ [0, 1, -1]
+?        ^^
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
+

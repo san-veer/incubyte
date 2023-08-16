@@ -6,11 +6,11 @@ class TestSpacecraft(unittest.TestCase):
 
         initial_position = [0, 0, 0]
         initial_direction = 'N'
-        commands = ['f', 'r', 'u']
+        commands = ['f', 'r', 'u', 'b']
 
         returned_position, returned_direction = chandrayaan_3(initial_position, initial_direction, commands)
 
-        expected_position = [0, 1, 0]
+        expected_position = [0, 1, -1]
         expected_direction = 'U'
         
         self.assertEqual(returned_position, expected_position)
