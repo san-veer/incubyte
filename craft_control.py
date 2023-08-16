@@ -20,5 +20,7 @@ def chandrayaan_3(position, direction, commands):
    for command in commands:
       if command == "f":
          move_forward(position, direction)
+      elif command == "r":
+         turn_right(position, direction)
 
    return position, direction
