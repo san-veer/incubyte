@@ -139,3 +139,34 @@ Description:
 Ran 1 test in 0.000s
 
 OK
+
+## Test Case 4: 
+
+Description: 
+
+**Input**:
+- Initial position: (0, 0, 0)
+- Initial direction: N
+- Command: ['f', 'r'. 'u']
+
+**Expected Output**:
+- Final Position: (0, 1, 0)
+- Final direction: U
+
+**Actual Output**:
+- Final Position: (0, 1, 0)
+- Final direction: E
+FAIL: test_case (__main__.TestSpacecraft.test_case)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\KIIT\Desktop\incubyte\test_case.py", line 17, in test_case
+    self.assertEqual(returned_direction, expected_direction)
+AssertionError: 'E' != 'U'
+- E
++ U
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
