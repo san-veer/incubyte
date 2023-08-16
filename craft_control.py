@@ -51,6 +51,15 @@ def turn_left(direction):
 def turn_up(direction):
    if direction == 'E':
       return 'U'
+   if direction == "N":
+      direction = "U"
+   elif direction == "U":
+      direction = "S"
+   elif direction == "S":
+      direction = "D"
+   elif direction == "D":
+      direction = "N"
+
 
 def turn_down(direction):
    return
