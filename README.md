@@ -147,7 +147,7 @@ Description:
 **Input**:
 - Initial position: (0, 0, 0)
 - Initial direction: N
-- Command: ['f', 'r'. 'u']
+- Command: ['f', 'r', 'u']
 
 **Expected Output**:
 - Final Position: (0, 1, 0)
@@ -178,7 +178,7 @@ Description:
 **Input**:
 - Initial position: (0, 0, 0)
 - Initial direction: N
-- Command: ['f', 'r'. 'u']
+- Command: ['f', 'r', 'u']
 
 **Expected Output**:
 - Final Position: (0, 1, 0)
@@ -200,7 +200,7 @@ Description:
 **Input**:
 - Initial position: (0, 0, 0)
 - Initial direction: N
-- Command: ['f', 'r'. 'u']
+- Command: ['f', 'r', 'u', 'b']
 
 **Expected Output**:
 - Final Position: (0, 1, -1)
@@ -232,4 +232,26 @@ First differing element 2:
 Ran 1 test in 0.001s
 
 FAILED (failures=1)
+
+## Test Case 5 pass: 
+
+Description: 
+
+**Input**:
+- Initial position: (0, 0, 0)
+- Initial direction: N
+- Command: ['f', 'r'. 'u', 'b']
+
+**Expected Output**:
+- Final Position: (0, 1, -1)
+- Final direction: U
+
+**Actual Output**:
+- Final Position: (0, 1, -1)
+- Final direction: U
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
 
