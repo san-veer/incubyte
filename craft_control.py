@@ -1,5 +1,5 @@
 def move_forward(position, direction):
-      position[1]
+      position[1] += 1
 
 def move_backward(position, direction):
    return
