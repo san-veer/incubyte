@@ -26,13 +26,19 @@ def move_backward(position, direction):
    elif direction == "D":
       position[2] += 1
 
+def turn_right(direction):
+   if direction == "N":
+      direction = "E"
+   elif direction == "E":
+      direction = "S"
+   elif direction == "S":
+      direction = "W"
+   elif direction == "W":
+      direction = "N"
+   
 def turn_left(direction):
    if direction == 'U':
       return 'N'
-
-def turn_right(direction):
-   if direction == 'N':
-      return 'E'
 
 def turn_up(direction):
    if direction == 'E':
