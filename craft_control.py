@@ -62,7 +62,14 @@ def turn_up(direction):
 
 
 def turn_down(direction):
-   return
+   if direction == "N":
+      direction = "D"
+   elif direction == "D":
+      direction = "S"
+   elif direction == "S":
+      direction = "U"
+   elif direction == "U":
+      direction = "N"
 
 def chandrayaan_3(position, direction, commands):
    for command in commands:
