@@ -118,3 +118,24 @@ Ran 1 test in 0.001s
 
 FAILED (failures=1)
 
+## Test Case 3 pass: 
+
+Description: 
+
+**Input**:
+- Initial position: (0, 0, 0)
+- Initial direction: N
+- Command: ['f', 'r']
+
+**Expected Output**:
+- Final Position: (0, 1, 0)
+- Final direction: E
+
+**Actual Output**:
+- Final Position: (0, 1, 0)
+- Final direction: E
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
