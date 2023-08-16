@@ -37,6 +37,14 @@ def turn_right(direction):
       direction = "N"
    
 def turn_left(direction):
+   if direction == "N":
+      direction = "W"
+   elif direction == "W":
+      direction = "S"
+   elif direction == "S":
+      direction = "E"
+   elif direction == "E":
+      direction = "N"
    if direction == 'U':
       return 'N'
 
