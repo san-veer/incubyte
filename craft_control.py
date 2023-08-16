@@ -26,29 +26,46 @@ def move_backward(position, direction):
    elif direction == "D":
       position[2] += 1
 
-def turn_right(direction):
+def turn_right(direction, belly_direction):
    if direction == "N":
-      direction = "E"
+      return "E", 
    elif direction == "E":
-      direction = "S"
+      return "S"
    elif direction == "S":
-      direction = "W"
+     return "W"
    elif direction == "W":
-      direction = "N"
+      return "N"
+   elif direction == "U" and belly_direction == "N":
+      return "E", 
+   elif direction == "U" and belly_direction == "E":
+      return "S"
+   elif direction == "U" and belly_direction == "S":
+     return "W"
+   elif direction == "D" and belly_direction == "W":
+      return "N"
+   elif direction == "D" and belly_direction == "N":
+      return "E", 
+   elif direction == "D" and belly_direction == "E":
+      return "S"
+   elif direction == "D" and belly_direction == "S":
+     return "W"
+   elif direction == "D" and belly_direction == "W":
+      return "N"
+
    
-def turn_left(direction):
+def turn_left(direction, belly_direction):
    if direction == "N":
-      direction = "W"
+      return "W"
    elif direction == "W":
-      direction = "S"
+      return "S"
    elif direction == "S":
-      direction = "E"
+      return "E"
    elif direction == "E":
-      direction = "N"
+      return "N"
    if direction == 'U':
       return 'N'
 
-def turn_up(direction):
+def turn_up(direction, belly_direction):
    if direction == 'E':
       return 'U'
    if direction == "N":
@@ -72,6 +89,7 @@ def turn_down(direction):
       direction = "N"
 
 def chandrayaan_3(position, direction, commands):
+   belly_direction = direction
    for command in commands:
       if command == "f":
          move_forward(position, direction)
